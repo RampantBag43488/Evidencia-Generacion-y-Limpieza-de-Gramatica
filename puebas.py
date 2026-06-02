@@ -18,6 +18,12 @@ for caso in casos_aceptados:
     tokens, arboles = parsear_oracion(caso)
     if len(arboles) > 0:
         print(f"Cadena: '{caso}' -> Aceptada")
+        print("Árboles encontrados:")
+        a = 1
+        for arbol in arboles:
+            print("arbol numero " + str(a))
+            print(arbol)
+            a += 1
     else:
         print(f"Cadena: '{caso}' -> Rechazada")
 
@@ -26,5 +32,11 @@ for caso in casos_rechazados:
     tokens, arboles = parsear_oracion(caso)
     if len(arboles) > 0:
         print(f"Cadena: '{caso}' -> Aceptada")
+        print("Árboles encontrados:")
+        a = 1
+        for arbol in arboles:
+            print("arbol numero " + str(a))
+            print(arbol)
+            a += 1
     else:
         print(f"Cadena: '{caso}' -> Rechazada")
